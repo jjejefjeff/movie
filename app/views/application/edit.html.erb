@@ -1,0 +1,10 @@
+<h1> Edit a movie profile</h1>
+
+<form action = "/editing/<%= @mov.id %>">
+  <h3> Movie Title </h3>
+  <input type="text" name = "imdb" value = "<%= @mov.imdb %>">
+  <h3> Movie image url </h3>
+  <input type="text" name = "img" value = "<%= @mov.img%>">
+  <p></p>
+  <input type="submit">
+</form>

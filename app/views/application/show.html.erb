@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Movies</a>
+    </div>
+
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+
+      <div class="thumbnail">
+        <a href="<%= @mov.imdb %>"><img src="<%= @mov.img %>" alt="..."></a>
+      </div>
+
+    </div>
+    <small> <a href="/movie/<%=@mov.id%>/edit"> edit </a> | <a href="/movie/<%=@mov.id%>/destroy"> destroy </a> </small>
+  </div>
+</div>
